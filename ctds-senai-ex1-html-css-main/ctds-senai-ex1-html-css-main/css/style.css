@@ -1,0 +1,111 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+img{
+    width: 350px;
+
+}
+
+/* cabeçalho */
+:root{
+    --background-Body: #f9f9f9;
+    --background-Hader: #1f2937;
+    --background-card: white;
+    --background-footer: #1f2937;
+    --color-Body:  #333;
+    --color-Hader: white;
+    --color-preco: #1f2937;
+    --color-footer: white;
+}
+body{
+    background-color: var(--background-Body);
+    color: var(--color-Body);
+    font-family: Poppins;
+}
+
+header{
+    background-color: var(--background-Hader);
+    color: var(--color-Hader);
+    text-align: center;
+    padding: 18px;
+}
+
+.card{
+    background-color: var(--background-card);
+}
+
+footer{
+    background-color: var(--background-footer);
+    color: var(--color-footer);
+    text-align: center;
+    padding: 7px;
+    margin-top: 40px;
+}
+
+.preco{
+    color: var(--color-preco);
+}
+
+/* fonte do texto */
+h1{
+    font-size: 2rem;
+}
+
+.card h2{
+    font-size: 1,2rem;
+}
+
+.card p{
+    font-size: 0.95rem;
+}
+/* corpo do site  */
+main{
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    
+
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.card{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2 ease-in-out;
+    text-align: center;
+}
+
+.preco{
+    padding: 12px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.card :hover{
+    transform: scale(1.03);
+}
+
+@media  (max-width: 600px){
+     
+     .card{ 
+        width: 90%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
